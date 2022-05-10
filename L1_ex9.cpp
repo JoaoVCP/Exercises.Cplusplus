@@ -6,7 +6,7 @@ int main()
     float nota1, nota2, mediaClasse=0, mediaAluno, somaNota,somaClasse;
     int reprovados=0, aprovados=0, exame=0, i, n;
 
-    printf("Quantos alunos s„o?");
+    printf("Quantos alunos s√£o?");
     scanf("%i*c",&n);
 
     for(i=1; i <= n; i++){
@@ -16,24 +16,24 @@ int main()
         scanf("%f*c",&nota2);
 
         if(nota1 < 0 && nota2 < 0 || nota1 > 10 && nota2 > 10) {
-            printf("\nVocÍ est· digitando uma nota errada! Comece denovo");
+            printf("\nVoc√™ est√° digitando uma nota errada! Comece denovo");
             break;
         }
 
         somaNota = nota1+nota2;
         mediaAluno = somaNota/2;
-        printf("\nVocÍ tirou a nota: %f",mediaAluno);
+        printf("\nVoc√™ tirou a nota: %f",mediaAluno);
 
         if(mediaAluno >= 7) {
-            printf("\nVocÍ est· Aprovado!");
+            printf("\nVoc√™ est√° Aprovado!");
             aprovados += 1;
         }
         else if(mediaAluno > 3 && mediaAluno < 7) {
-            printf("\nVocÍ est· de exame!");
+            printf("\nVoc√™ est√° de exame!");
             exame += 1;
         }
         else {
-            printf("\nVocÍ est· reprovado!");
+            printf("\nVoc√™ est√° reprovado!");
             reprovados += 1;
         }
         somaClasse = somaClasse + somaNota;
@@ -43,7 +43,7 @@ int main()
     printf("A quantidade de alunos de exame foram: %i\n",exame);
     printf("A quantidade de alunos reprovados foram: %i\n",reprovados);
     mediaClasse = somaClasse / (n*2);
-    printf("A media da classe È: %f\n",mediaClasse);
+    printf("A media da classe √©: %f\n",mediaClasse);
 
     getchar();
     return 0;
